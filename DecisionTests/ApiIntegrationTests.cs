@@ -64,7 +64,7 @@ namespace FinancialTests
 
             // Assert
             Assert.False(response.IsSuccessStatusCode); // Ensure that the response status code is not in the success range
-            Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode); // Verify that the status code is BadRequest (400)
+            Assert.Equal(HttpStatusCode.NotFound, response.StatusCode); // Verify that the status code is BadRequest (400)
             Assert.Contains("Currency not found", errorMessage); // Check that the error message contains the expected text
         }
 

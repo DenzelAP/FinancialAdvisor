@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9A925E1B-D5F5-4D5B-A6FD-FF289BF68F47}|DecisionTests\\FinancialTests.csproj|c:\\users\\bruck\\desktop\\programming\\ap\\2024-25\\testing \u0026 security\\financialadvisor\\financialadvisor\\decisiontests\\apiintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A925E1B-D5F5-4D5B-A6FD-FF289BF68F47}|DecisionTests\\FinancialTests.csproj|solutionrelative:decisiontests\\apiintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{19524F1F-813F-4E0D-8B84-1142C5577BF5}|AcceptanceTests\\AcceptanceTests.csproj|c:\\users\\bruck\\desktop\\programming\\ap\\2024-25\\testing \u0026 security\\financialadvisor\\financialadvisor\\acceptancetests\\stepdefinitions\\currencyexchangesteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19524F1F-813F-4E0D-8B84-1142C5577BF5}|AcceptanceTests\\AcceptanceTests.csproj|solutionrelative:acceptancetests\\stepdefinitions\\currencyexchangesteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19524F1F-813F-4E0D-8B84-1142C5577BF5}|AcceptanceTests\\AcceptanceTests.csproj|c:\\users\\bruck\\desktop\\programming\\ap\\2024-25\\testing \u0026 security\\financialadvisor\\financialadvisor\\acceptancetests\\features\\currencyexchange.feature||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{19524F1F-813F-4E0D-8B84-1142C5577BF5}|AcceptanceTests\\AcceptanceTests.csproj|solutionrelative:acceptancetests\\features\\currencyexchange.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90630052-11FC-483E-B774-8157545C1F93}|FinancialAdvisor\\FinancialAdvisor.csproj|c:\\users\\bruck\\desktop\\programming\\ap\\2024-25\\testing \u0026 security\\financialadvisor\\financialadvisor\\financialadvisor\\mockinformationprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,24 +19,24 @@
       "RelativeMoniker": "D:0:0:{90630052-11FC-483E-B774-8157545C1F93}|FinancialAdvisor\\FinancialAdvisor.csproj|solutionrelative:financialadvisor\\actionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90630052-11FC-483E-B774-8157545C1F93}|FinancialAdvisor\\FinancialAdvisor.csproj|c:\\users\\bruck\\desktop\\programming\\ap\\2024-25\\testing \u0026 security\\financialadvisor\\financialadvisor\\financialadvisor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90630052-11FC-483E-B774-8157545C1F93}|FinancialAdvisor\\FinancialAdvisor.csproj|solutionrelative:financialadvisor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90630052-11FC-483E-B774-8157545C1F93}|FinancialAdvisor\\FinancialAdvisor.csproj|c:\\users\\bruck\\desktop\\programming\\ap\\2024-25\\testing \u0026 security\\financialadvisor\\financialadvisor\\financialadvisor\\decisionmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90630052-11FC-483E-B774-8157545C1F93}|FinancialAdvisor\\FinancialAdvisor.csproj|solutionrelative:financialadvisor\\decisionmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90630052-11FC-483E-B774-8157545C1F93}|FinancialAdvisor\\FinancialAdvisor.csproj|c:\\users\\bruck\\desktop\\programming\\ap\\2024-25\\testing \u0026 security\\financialadvisor\\financialadvisor\\financialadvisor\\invalidinputexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90630052-11FC-483E-B774-8157545C1F93}|FinancialAdvisor\\FinancialAdvisor.csproj|solutionrelative:financialadvisor\\invalidinputexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90630052-11FC-483E-B774-8157545C1F93}|FinancialAdvisor\\FinancialAdvisor.csproj|c:\\users\\bruck\\desktop\\programming\\ap\\2024-25\\testing \u0026 security\\financialadvisor\\financialadvisor\\financialadvisor\\iinformationprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90630052-11FC-483E-B774-8157545C1F93}|FinancialAdvisor\\FinancialAdvisor.csproj|solutionrelative:financialadvisor\\iinformationprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90630052-11FC-483E-B774-8157545C1F93}|FinancialAdvisor\\FinancialAdvisor.csproj|c:\\users\\bruck\\desktop\\programming\\ap\\2024-25\\testing \u0026 security\\financialadvisor\\financialadvisor\\financialadvisor\\invalidinputexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90630052-11FC-483E-B774-8157545C1F93}|FinancialAdvisor\\FinancialAdvisor.csproj|solutionrelative:financialadvisor\\invalidinputexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90630052-11FC-483E-B774-8157545C1F93}|FinancialAdvisor\\FinancialAdvisor.csproj|c:\\users\\bruck\\desktop\\programming\\ap\\2024-25\\testing \u0026 security\\financialadvisor\\financialadvisor\\financialadvisor\\decisionmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90630052-11FC-483E-B774-8157545C1F93}|FinancialAdvisor\\FinancialAdvisor.csproj|solutionrelative:financialadvisor\\decisionmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A925E1B-D5F5-4D5B-A6FD-FF289BF68F47}|DecisionTests\\FinancialTests.csproj|c:\\users\\bruck\\desktop\\programming\\ap\\2024-25\\testing \u0026 security\\financialadvisor\\financialadvisor\\decisiontests\\actionhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A925E1B-D5F5-4D5B-A6FD-FF289BF68F47}|DecisionTests\\FinancialTests.csproj|solutionrelative:decisiontests\\actionhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90630052-11FC-483E-B774-8157545C1F93}|FinancialAdvisor\\FinancialAdvisor.csproj|c:\\users\\bruck\\desktop\\programming\\ap\\2024-25\\testing \u0026 security\\financialadvisor\\financialadvisor\\financialadvisor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90630052-11FC-483E-B774-8157545C1F93}|FinancialAdvisor\\FinancialAdvisor.csproj|solutionrelative:financialadvisor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,15 +58,65 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CurrencyExchange.feature",
+              "DocumentMoniker": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\AcceptanceTests\\Features\\CurrencyExchange.feature",
+              "RelativeDocumentMoniker": "AcceptanceTests\\Features\\CurrencyExchange.feature",
+              "ToolTip": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\AcceptanceTests\\Features\\CurrencyExchange.feature",
+              "RelativeToolTip": "AcceptanceTests\\Features\\CurrencyExchange.feature",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVDhPdVNfSFNhFP/duznd5tRy5N2o1BwoCVJZD0FgulCIXiJqIyiCKIKeequnKGgQ\u002BBSBT770oNtDgv15CKKCGkRgD/WQZCqBcnfnarmcbtO72znfvddNqx/8zs537nd\u002B3znfdybhXxhXfJCwn7x24gb589AxjfOpvPhuwzCMrQIGMaFcInuDyAJOIqNE/EyMIZqaEBELFYG4Ukd2mHidl7WyC8VyCbIkC39NL3CYcROSNIyIqvNCFiETV4nX2Olu7MS78CS6Gzpxse0s3gxM0EmbZ92m0k9YviUQV5rI3iU6drqakFtfQat3D476D\u002BNkIIzVjTXqjvsTcBPv4WlQKNo9DhEbW7278br/MV5qb9H36jR\u002Bln4hmfmAH8WsuauCQ8iX99HvrN3CATaLqypG58bglBzQCkuCX3IzSBczYlMV\u002BHSRYwuISnSjjO/5BZFU0IviAyNU34ZYzy0MKsetiICXjS0wxybka8fD3hgGWo7BX9uMZtcOBOp2wUEVDSn9GOm9LzZbWGBjXm1C6aA7\u002Bko3LXfQacvrOSTDT/BgZhRdDSF0\u002BUI4k7wMj8MDtaBxBr2p0YKoljMriKRmyT7im/62Mg9fTT09tYyP2U94n5lC0K2I9qxkxhgns1M9SEGyz4gHecnPmS0ti0HyON34TU9rIQ3J6ENEm\u002BZFRYAxrvgpMkLeKSJP5nbwfyFC4/zcXG4XYCQCNdTJEeqRp/KCGRRIEa9QMle5ib8FbCQCgzSyL8hbJE7S1juIqmnxrQr/F4gH9lIVPeRNQdZVnFsy41sA/AGfbrS3fsL98AAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-01-03T13:14:32.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ApiIntegrationTests.cs",
-              "DocumentMoniker": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\DecisionTests\\ApiIntegrationTests.cs",
-              "RelativeDocumentMoniker": "DecisionTests\\ApiIntegrationTests.cs",
-              "ToolTip": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\DecisionTests\\ApiIntegrationTests.cs",
-              "RelativeToolTip": "DecisionTests\\ApiIntegrationTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAB7AAAAAAAAAA==",
+              "Title": "CurrencyExchangeSteps.cs",
+              "DocumentMoniker": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\AcceptanceTests\\StepDefinitions\\CurrencyExchangeSteps.cs",
+              "RelativeDocumentMoniker": "AcceptanceTests\\StepDefinitions\\CurrencyExchangeSteps.cs",
+              "ToolTip": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\AcceptanceTests\\StepDefinitions\\CurrencyExchangeSteps.cs",
+              "RelativeToolTip": "AcceptanceTests\\StepDefinitions\\CurrencyExchangeSteps.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T13:12:09.128Z",
+              "WhenOpened": "2025-01-03T13:16:23.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InvalidInputException.cs",
+              "DocumentMoniker": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\FinancialAdvisor\\InvalidInputException.cs",
+              "RelativeDocumentMoniker": "FinancialAdvisor\\InvalidInputException.cs",
+              "ToolTip": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\FinancialAdvisor\\InvalidInputException.cs",
+              "RelativeToolTip": "FinancialAdvisor\\InvalidInputException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T11:54:26.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ActionHandler.cs",
+              "DocumentMoniker": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\FinancialAdvisor\\ActionHandler.cs",
+              "RelativeDocumentMoniker": "FinancialAdvisor\\ActionHandler.cs",
+              "ToolTip": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\FinancialAdvisor\\ActionHandler.cs",
+              "RelativeToolTip": "FinancialAdvisor\\ActionHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T11:53:30.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MockInformationProvider.cs",
+              "DocumentMoniker": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\FinancialAdvisor\\MockInformationProvider.cs",
+              "RelativeDocumentMoniker": "FinancialAdvisor\\MockInformationProvider.cs",
+              "ToolTip": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\FinancialAdvisor\\MockInformationProvider.cs",
+              "RelativeToolTip": "FinancialAdvisor\\MockInformationProvider.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T11:53:09.676Z",
               "EditorCaption": ""
             },
             {
@@ -79,56 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ActionHandlerTests.cs",
-              "DocumentMoniker": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\DecisionTests\\ActionHandlerTests.cs",
-              "RelativeDocumentMoniker": "DecisionTests\\ActionHandlerTests.cs",
-              "ToolTip": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\DecisionTests\\ActionHandlerTests.cs",
-              "RelativeToolTip": "DecisionTests\\ActionHandlerTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T11:55:34.238Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "InvalidInputException.cs",
-              "DocumentMoniker": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\FinancialAdvisor\\InvalidInputException.cs",
-              "RelativeDocumentMoniker": "FinancialAdvisor\\InvalidInputException.cs",
-              "ToolTip": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\FinancialAdvisor\\InvalidInputException.cs",
-              "RelativeToolTip": "FinancialAdvisor\\InvalidInputException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T11:54:26.455Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ActionHandler.cs",
-              "DocumentMoniker": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\FinancialAdvisor\\ActionHandler.cs",
-              "RelativeDocumentMoniker": "FinancialAdvisor\\ActionHandler.cs",
-              "ToolTip": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\FinancialAdvisor\\ActionHandler.cs",
-              "RelativeToolTip": "FinancialAdvisor\\ActionHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T11:53:30.687Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MockInformationProvider.cs",
-              "DocumentMoniker": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\FinancialAdvisor\\MockInformationProvider.cs",
-              "RelativeDocumentMoniker": "FinancialAdvisor\\MockInformationProvider.cs",
-              "ToolTip": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\FinancialAdvisor\\MockInformationProvider.cs",
-              "RelativeToolTip": "FinancialAdvisor\\MockInformationProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T11:53:09.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "DecisionModule.cs",
               "DocumentMoniker": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\FinancialAdvisor\\DecisionModule.cs",
               "RelativeDocumentMoniker": "FinancialAdvisor\\DecisionModule.cs",
@@ -140,7 +145,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
+              "Title": "ActionHandlerTests.cs",
+              "DocumentMoniker": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\DecisionTests\\ActionHandlerTests.cs",
+              "RelativeDocumentMoniker": "DecisionTests\\ActionHandlerTests.cs",
+              "ToolTip": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\DecisionTests\\ActionHandlerTests.cs",
+              "RelativeToolTip": "DecisionTests\\ActionHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T11:55:34.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\bruck\\Desktop\\Programming\\AP\\2024-25\\Testing \u0026 Security\\FinancialAdvisor\\FinancialAdvisor\\FinancialAdvisor\\Program.cs",
               "RelativeDocumentMoniker": "FinancialAdvisor\\Program.cs",
