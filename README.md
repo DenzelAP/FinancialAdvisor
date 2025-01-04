@@ -1,6 +1,6 @@
 # Currency Exchange API Mock Test
 
-This project includes unit tests and integration tests for testing a mock API that simulates currency exchange rates. The mock API is simulated using [Mockoon](https://mockoon.com/), and the tests use [xUnit](https://xunit.net/) for assertions and [SpecFlow](https://specflow.org/) for behavior-driven development (BDD).
+This project includes unit tests, integration tests and acceptance tests for testing a mock API that simulates currency exchange rates. The mock API is simulated using [Mockoon](https://mockoon.com/), and the tests use [xUnit](https://xunit.net/) for assertions and [SpecFlow](https://specflow.org/) for behavior-driven development (BDD).
 
 ## Requirements
 
