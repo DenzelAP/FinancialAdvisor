@@ -3,7 +3,7 @@ using Moq;
 
 namespace FinancialTests
 {
-    public class ActionHandlerTests
+    public class FinancialUnitTests
     {
         [Fact]
         public void LogDecision_ShouldLogMessage_WhenMessageIsValid()

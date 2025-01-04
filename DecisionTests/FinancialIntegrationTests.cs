@@ -4,14 +4,14 @@ using System.Net;
 
 namespace FinancialTests
 {
-    public class ApiIntegrationTests
+    public class FinancialIntegrationTests
     {
         // Declare private variables for HttpClient and MockInformationProvider
         private readonly HttpClient _httpClient;
         private readonly MockInformationProvider _mockInformationProvider;
 
         // Constructor: Initializes HttpClient for making API requests and sets up MockInformationProvider
-        public ApiIntegrationTests()
+        public FinancialIntegrationTests()
         {
             // Setup HttpClient for Mockoon Server
             _httpClient = new HttpClient
