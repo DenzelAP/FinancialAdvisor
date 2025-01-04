@@ -54,3 +54,11 @@ Mockoon is used to simulate the currency exchange API. Below are the steps to se
 - Import the API definition provided in the mockoon-api.json file into Mockoon.
 - Launch Mockoon and start the mock API on port 3001 to simulate the exchange rate API.
 - Once the mock API is running, you can verify it by making a request to http://localhost:3001/api/exchange-rate/USD. This should return the exchange rate data.
+
+
+## Running the Project
+- Clone this repository to your local machine.
+- Open the solution in Visual Studio or your preferred C# development environment.
+- Build the project to ensure that all dependencies are correctly installed.
+- Start the mock API: Make sure Mockoon is running with the correct API simulation.
+- Run the tests
