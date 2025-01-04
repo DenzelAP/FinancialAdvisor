@@ -1,0 +1,569 @@
+{
+    "uuid": "dab99d0f-3984-4741-a85b-482c25f28e25",
+    "lastMigration": 33,
+    "name": "FinancialAdvisorApiMock",
+    "endpointPrefix": "",
+    "latency": 0,
+    "port": 3001,
+    "hostname": "",
+    "folders": [],
+    "routes": [
+        {
+            "uuid": "4f3efe71-cd85-4024-bc8c-9e5f610e8640",
+            "type": "crud",
+            "documentation": "Endpoint performing CRUD operations on a data bucket (automatically creates GET, POST, PUT, DELETE routes)",
+            "method": "",
+            "endpoint": "users",
+            "responses": [
+                {
+                    "uuid": "117b00ec-ef7d-4959-a162-a122b48f52ed",
+                    "body": "{}",
+                    "latency": 0,
+                    "statusCode": 200,
+                    "label": "Perform CRUD operations on the \"Users\" databucket (\"Data\" tab at the top)",
+                    "headers": [],
+                    "bodyType": "DATABUCKET",
+                    "filePath": "",
+                    "databucketID": "d81g",
+                    "sendFileAsBody": false,
+                    "rules": [],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": true,
+                    "crudKey": "id",
+                    "callbacks": []
+                }
+            ],
+            "responseMode": null,
+            "streamingMode": null,
+            "streamingInterval": 0
+        },
+        {
+            "uuid": "d1ecb7b2-07bb-4e4d-b2e8-b3ddb558b629",
+            "type": "http",
+            "documentation": "Generate random body (JSON, text, CSV, etc) with templating",
+            "method": "get",
+            "endpoint": "template",
+            "responses": [
+                {
+                    "uuid": "1df7c3f4-084d-4ec5-ba66-6a09496db143",
+                    "body": "{\n  \"Templating example\": \"For more information about templating, click the blue 'i' above this editor\",\n  \"users\": [\n    {{# repeat (queryParam 'total' '10') }}\n      {\n        \"userId\": \"{{ faker 'number.int' min=10000 max=100000 }}\",\n        \"firstname\": \"{{ faker 'person.firstName' }}\",\n        \"lastname\": \"{{ faker 'person.lastName' }}\",\n        \"friends\": [\n          {{# repeat (faker 'number.int' 5) }}\n            {\n              \"id\": \"{{ faker 'string.uuid' }}\"\n            }\n          {{/ repeat }}\n        ]\n      },\n    {{/ repeat }}\n  ],\n  \"total\": \"{{queryParam 'total' '10'}}\"\n}",
+                    "latency": 0,
+                    "statusCode": 200,
+                    "label": "Creates 10 random users, or the amount specified in the 'total' query param",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": false,
+                    "crudKey": "id",
+                    "callbacks": []
+                }
+            ],
+            "responseMode": null,
+            "streamingMode": null,
+            "streamingInterval": 0
+        },
+        {
+            "uuid": "12aa79ee-61b7-488b-aa19-997ec0d39d37",
+            "type": "http",
+            "documentation": "Use multiple responses with rules",
+            "method": "post",
+            "endpoint": "content/:param1",
+            "responses": [
+                {
+                    "uuid": "c1e4f5ea-5331-4481-87bb-e52f6ca7bf14",
+                    "body": "{\n  \"Rules example\": \"Default response. Served if route param 'param1' is not present.\"\n}",
+                    "latency": 0,
+                    "statusCode": 200,
+                    "label": "Default response",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": true,
+                    "crudKey": "id",
+                    "callbacks": []
+                },
+                {
+                    "uuid": "0e048921-bff3-4e19-9bc4-becf9c4b2341",
+                    "body": "{\n  \"Rules example\": \"Content XYZ. Served if route param 'param1' equals 'xyz'. (See in 'Rules' tab)\"\n}",
+                    "latency": 0,
+                    "statusCode": 200,
+                    "label": "Content XYZ",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [
+                        {
+                            "target": "params",
+                            "modifier": "param1",
+                            "value": "xyz",
+                            "invert": false,
+                            "operator": "equals"
+                        }
+                    ],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": false,
+                    "crudKey": "id",
+                    "callbacks": []
+                },
+                {
+                    "uuid": "4219fb92-8605-4609-b51e-23e81793d850",
+                    "body": "{\n  \"Rules example\": \"Content not found. Served if route param 'param1' is not equal to 'xyz'. (See in 'Rules' tab)\"\n}\n",
+                    "latency": 0,
+                    "statusCode": 404,
+                    "label": "Content not found",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [
+                        {
+                            "target": "params",
+                            "modifier": "param1",
+                            "value": "^(?!.*xyz).*$",
+                            "invert": false,
+                            "operator": "regex"
+                        }
+                    ],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": false,
+                    "crudKey": "id",
+                    "callbacks": []
+                }
+            ],
+            "responseMode": null,
+            "streamingMode": null,
+            "streamingInterval": 0
+        },
+        {
+            "uuid": "e5001d7b-ff04-4eb6-a71f-d768dc2e0849",
+            "type": "http",
+            "documentation": "\"Guard\" route protecting all routes starting with /protected/",
+            "method": "all",
+            "endpoint": "protected/*",
+            "responses": [
+                {
+                    "uuid": "86ffb855-071f-4019-aefa-8c7db451d609",
+                    "body": "{\n  \"error\": \"Unauthorized\"\n}",
+                    "latency": 0,
+                    "statusCode": 401,
+                    "label": "Requires the presence of an 'Authorization' header",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [
+                        {
+                            "target": "header",
+                            "modifier": "Authorization",
+                            "operator": "null",
+                            "invert": false,
+                            "value": ""
+                        }
+                    ],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": false,
+                    "crudKey": "id",
+                    "callbacks": []
+                }
+            ],
+            "responseMode": "FALLBACK",
+            "streamingMode": null,
+            "streamingInterval": 0
+        },
+        {
+            "uuid": "20562033-d9a1-49af-bfdb-ef70dfc358b7",
+            "type": "http",
+            "documentation": "Protected route",
+            "method": "get",
+            "endpoint": "protected/path",
+            "responses": [
+                {
+                    "uuid": "a10eb7e0-98c6-422b-a6c0-201a3daff3cd",
+                    "body": "You can serve the same responses based on the same rules for all or part of your endpoints by creating global routes using the fallback mode and a wildcard path. \nThis is useful if you want to protect all your endpoints by checking if an Authorization header is present or if you want to verify that all your requests contain a specific property in their body.\nTo learn more: https://mockoon.com/docs/latest/route-responses/global-routes-with-rules/",
+                    "latency": 0,
+                    "statusCode": 200,
+                    "label": "",
+                    "headers": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": false,
+                    "crudKey": "id",
+                    "callbacks": []
+                }
+            ],
+            "responseMode": null,
+            "streamingMode": null,
+            "streamingInterval": 0
+        },
+        {
+            "method": "get",
+            "endpoint": "forward-and-record",
+            "documentation": "Can Mockoon forward or record entering requests?",
+            "responses": [
+                {
+                    "uuid": "959d0736-be56-4e72-a248-7334ad39d5e5",
+                    "body": "Mockoon can also act as a proxy and forward all entering requests that are not caught by declared routes. \nYou can activate this option in the environment settings (\"Settings\" tab at the top). \nTo learn more: https://mockoon.com/docs/latest/server-configuration/proxy-mode/\n\nAll entering requests, and responses from the proxied server will be recorded and can be automatically mocked (\"Logs\" tab at the top).\nTo learn more: https://mockoon.com/docs/latest/logging-and-recording/requests-logging/",
+                    "latency": 0,
+                    "statusCode": 200,
+                    "label": "",
+                    "headers": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": false,
+                    "crudKey": "id",
+                    "callbacks": []
+                }
+            ],
+            "uuid": "a01c68c1-bd17-40dd-853e-13fc0aa13b4b",
+            "type": "http",
+            "responseMode": null,
+            "streamingMode": null,
+            "streamingInterval": 0
+        },
+        {
+            "uuid": "413a8ceb-12de-4ed8-9cc5-ffb25ee47041",
+            "type": "http",
+            "documentation": "",
+            "method": "get",
+            "endpoint": "weather",
+            "responses": [
+                {
+                    "uuid": "7c5a856c-a3a9-4fa4-bf58-732759481c7f",
+                    "body": "{\"coord\":{\"lon\":4.4035,\"lat\":51.2199},\"weather\":[{\"id\":801,\"main\":\"Clouds\",\"description\":\"few clouds\",\"icon\":\"02d\"}],\"base\":\"stations\",\"main\":{\"temp\":-1,\"feels_like\":2.53,\"temp_min\":5.5,\"temp_max\":7.17,\"pressure\":1017,\"humidity\":82,\"sea_level\":1017,\"grnd_level\":1016},\"visibility\":10000,\"wind\":{\"speed\":6.69,\"deg\":310,\"gust\":12.35},\"clouds\":{\"all\":20},\"dt\":1734945029,\"sys\":{\"type\":2,\"id\":2006860,\"country\":\"BE\",\"sunrise\":1734939919,\"sunset\":1734968269},\"timezone\":3600,\"id\":2803138,\"name\":\"Antwerp\",\"cod\":200}",
+                    "latency": 0,
+                    "statusCode": 200,
+                    "label": "",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": true,
+                    "crudKey": "id",
+                    "callbacks": []
+                }
+            ],
+            "responseMode": null,
+            "streamingMode": null,
+            "streamingInterval": 0
+        },
+        {
+            "uuid": "4be71db2-340a-4b3b-884e-6bb4cedb5ada",
+            "type": "http",
+            "documentation": "",
+            "method": "get",
+            "endpoint": "api/exchange-rate/:currency",
+            "responses": [
+                {
+                    "uuid": "8e722637-7aba-4c3c-9a2f-6098dfbf1990",
+                    "body": "{\r\n  \"Currency\": \"USD\",\r\n  \"Rate\": 1.1\r\n}\r\n",
+                    "latency": 0,
+                    "statusCode": 200,
+                    "label": "",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [
+                        {
+                            "target": "params",
+                            "modifier": "currency",
+                            "value": "USD",
+                            "invert": false,
+                            "operator": "equals"
+                        }
+                    ],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": true,
+                    "crudKey": "id",
+                    "callbacks": []
+                },
+                {
+                    "uuid": "768bed58-1349-487e-8bbe-9680ec454aac",
+                    "body": "{\r\n  \"Currency\": \"EUR\",\r\n  \"Rate\": 1.0\r\n}\r\n",
+                    "latency": 0,
+                    "statusCode": 200,
+                    "label": "",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [
+                        {
+                            "target": "params",
+                            "modifier": "currency",
+                            "value": "EUR",
+                            "invert": false,
+                            "operator": "equals"
+                        }
+                    ],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": false,
+                    "crudKey": "id",
+                    "callbacks": []
+                },
+                {
+                    "uuid": "29a93cfb-d343-4383-aceb-ef950f3f5782",
+                    "body": "{\r\n  \"Currency\": \"GBP\",\r\n  \"Rate\": 0.85\r\n}\r\n",
+                    "latency": 0,
+                    "statusCode": 200,
+                    "label": "",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [
+                        {
+                            "target": "params",
+                            "modifier": "currency",
+                            "value": "GBP",
+                            "invert": false,
+                            "operator": "equals"
+                        }
+                    ],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": false,
+                    "crudKey": "id",
+                    "callbacks": []
+                },
+                {
+                    "uuid": "cc9da4c8-0451-4e06-a3b8-ccc534460402",
+                    "body": "{\r\n  \"Currency\": \"JPY\",\r\n  \"Rate\": 120\r\n}\r\n",
+                    "latency": 0,
+                    "statusCode": 200,
+                    "label": "",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [
+                        {
+                            "target": "params",
+                            "modifier": "currency",
+                            "value": "JPY",
+                            "invert": false,
+                            "operator": "equals"
+                        }
+                    ],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": false,
+                    "crudKey": "id",
+                    "callbacks": []
+                },
+                {
+                    "uuid": "be88fbbd-66f9-4382-abf7-1cb7af855094",
+                    "body": "{\r\n  \"Currency\": \"CNY\",\r\n  \"Rate\": 7.8\r\n}\r\n",
+                    "latency": 0,
+                    "statusCode": 200,
+                    "label": "",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [
+                        {
+                            "target": "params",
+                            "modifier": "currency",
+                            "value": "CNY",
+                            "invert": false,
+                            "operator": "equals"
+                        }
+                    ],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": false,
+                    "crudKey": "id",
+                    "callbacks": []
+                },
+                {
+                    "uuid": "2911f0f5-3afa-4d6f-a4a3-02e2934c8861",
+                    "body": "{\r\n  \"error\": \"Currency not found\"\r\n}\r\n",
+                    "latency": 0,
+                    "statusCode": 404,
+                    "label": "",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [
+                        {
+                            "target": "params",
+                            "modifier": "currency",
+                            "value": "",
+                            "invert": false,
+                            "operator": "null"
+                        },
+                        {
+                            "target": "params",
+                            "modifier": "currency",
+                            "value": "USD",
+                            "invert": true,
+                            "operator": "equals"
+                        }
+                    ],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": false,
+                    "crudKey": "id",
+                    "callbacks": []
+                }
+            ],
+            "responseMode": null,
+            "streamingMode": null,
+            "streamingInterval": 0
+        }
+    ],
+    "rootChildren": [
+        {
+            "type": "route",
+            "uuid": "4f3efe71-cd85-4024-bc8c-9e5f610e8640"
+        },
+        {
+            "type": "route",
+            "uuid": "d1ecb7b2-07bb-4e4d-b2e8-b3ddb558b629"
+        },
+        {
+            "type": "route",
+            "uuid": "12aa79ee-61b7-488b-aa19-997ec0d39d37"
+        },
+        {
+            "type": "route",
+            "uuid": "e5001d7b-ff04-4eb6-a71f-d768dc2e0849"
+        },
+        {
+            "type": "route",
+            "uuid": "20562033-d9a1-49af-bfdb-ef70dfc358b7"
+        },
+        {
+            "type": "route",
+            "uuid": "a01c68c1-bd17-40dd-853e-13fc0aa13b4b"
+        },
+        {
+            "type": "route",
+            "uuid": "413a8ceb-12de-4ed8-9cc5-ffb25ee47041"
+        },
+        {
+            "type": "route",
+            "uuid": "4be71db2-340a-4b3b-884e-6bb4cedb5ada"
+        }
+    ],
+    "proxyMode": false,
+    "proxyHost": "",
+    "proxyRemovePrefix": false,
+    "tlsOptions": {
+        "enabled": false,
+        "type": "CERT",
+        "pfxPath": "",
+        "certPath": "",
+        "keyPath": "",
+        "caPath": "",
+        "passphrase": ""
+    },
+    "cors": true,
+    "headers": [
+        {
+            "key": "Content-Type",
+            "value": "application/json"
+        },
+        {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+        },
+        {
+            "key": "Access-Control-Allow-Methods",
+            "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+        },
+        {
+            "key": "Access-Control-Allow-Headers",
+            "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+        }
+    ],
+    "proxyReqHeaders": [
+        {
+            "key": "",
+            "value": ""
+        }
+    ],
+    "proxyResHeaders": [
+        {
+            "key": "",
+            "value": ""
+        }
+    ],
+    "data": [
+        {
+            "uuid": "4262edfd-bdad-49c3-85e0-9dab6e7565e1",
+            "id": "d81g",
+            "name": "Users",
+            "documentation": "",
+            "value": "[\n  {{#repeat 50}}\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"username\": \"{{faker 'internet.userName'}}\"\n  }\n  {{/repeat}}\n]"
+        }
+    ],
+    "callbacks": []
+}
